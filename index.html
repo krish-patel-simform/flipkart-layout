@@ -18,9 +18,14 @@
             <nav class="header__nav wrapper">
                 <!-- left -->
                 <div class="nav__left">
-                    <figure class="image-container">
+
+                    <svg class="image-container">
+                        <use href="./public/images/flipkart.svg"></use>
+                    </svg>
+
+                    <!-- <figure class="image-container">
                         <img src="./public/images/logo.png" alt="logo" height="100%" width="auto"/>
-                    </figure>
+                    </figure> -->
                     <search class="header-search">
                         <input type="search" name="search" placeholder="Search for product and more"/>
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -29,6 +34,10 @@
 
                 <!-- right -->
                 <div class="nav__right">
+                    <input type="checkbox" id="checkbox" class="hidden"/>
+                    <label for="checkbox">
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
                     <button class="btn header-btn">Login</button>
                     <button class="btn">
                         <span>

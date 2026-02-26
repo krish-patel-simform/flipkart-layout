@@ -7,8 +7,10 @@
 
 :root{
 
+    /* background */
     --bg-header:#2874F0;
-    --bg-main:#F1F3F6;
+    --bg-primary:#FFF;
+    --bg-secondary:#F1F3F6;
 
     --color-primary:#2874F0;
     --color-white:#FFF; 
@@ -16,6 +18,7 @@
 
     --color-border:#E5E5E5;
 
+    /* text */
     --color-text-primary:#212121;
     --color-text-secondary:#959595;
     --colo-text-green:#5DA877;
@@ -38,6 +41,10 @@ body{
 
 /* utils classes */
 
+.hidden{
+    display: none;
+}
+
 .btn{
     border: 0;
     background: none;
@@ -51,8 +58,8 @@ body{
 }
 
 .image-container{
-    height: 2rem;
-    width: auto;
+    height: 2.5rem;
+    width: 6rem;
     display: block;
 }
 
@@ -85,6 +92,11 @@ body{
         gap: var(--rem-half);
         color: var(--color-white);
         font-size: var(--rem-1);
+    }
+    
+    & i{
+        color: var(--color-white);
+        font-size: 100%;
     }
 }
 
@@ -127,9 +139,16 @@ body{
     border-radius: var(--border-radius-small);
 }
 
+.root:has(input[type="checkbox"]:checked)
+{
+    --bg-primary:#121212;
+    --bg-secondary:#1E1E1E;
+    --color-text-primary:#EAEAEA;
+}
+
 /* category */
 .header__category-container{
-    background-color: var(--color-white);
+    background-color: var(--bg-primary);
     padding: var(--rem-1) 0;
 }
 
@@ -161,10 +180,10 @@ body{
 }
 
 .main-container{
-    background-color: var(--bg-main);
+    background-color: var(--bg-secondary);
 
     & .product-section {
-        background-color: var(--color-white);
+        background-color: var(--bg-primary);
         padding: var(--rem-1);
         margin: var(--rem-1) 0;
         border-radius: var(--border-radius-small);
@@ -173,7 +192,6 @@ body{
             overflow: auto;
         }
     }
-
 }
 
 /* products */
