@@ -12,11 +12,15 @@
 
     --color-primary:#2874F0;
     --color-white:#FFF; 
+    --color-grey:grey;
+
     --color-border:#E5E5E5;
 
     --color-text-primary:#212121;
     --color-text-secondary:#959595;
     --colo-text-green:#5DA877;
+
+    --border-radius-small:0.125rem;
 
     --rem-half : 0.5rem;
     --rem-1:1rem;
@@ -37,6 +41,7 @@ body{
 .btn{
     border: 0;
     background: none;
+    cursor: pointer;
 }
 
 .wrapper{
@@ -66,6 +71,8 @@ body{
 .nav__left{
     display: flex;
     gap: var(--rem-1);
+    max-width: 600px;
+    width: 100%;
 }
 
 .nav__right{
@@ -83,35 +90,59 @@ body{
 
 .header-search
 {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--rem-1);
+    background-color: var(--color-white);
+
     & input{
-        height: 100%;
-        width: 100%;
+        flex:1;
+        background: none;
+        border: none;
+        font-size: var(--rem-1);
+        padding: var(--rem-half) 0;
+
+        &:focus{
+            outline: none;
+        }
+        .header-search:has(&:focus){
+            outline: 2px solid var(--color-primary);
+        }
     }   
+
+    & i{
+        color: var(--color-primary);
+    }
 }
 
 .header-btn{
+    margin-left: var(--rem-1);
     background-color: var(--color-white);
     text-transform: capitalize;
     color: var(--color-primary);
     padding: var(--rem-half) var(--rem-1);
     letter-spacing: 1px;
+    border-radius: var(--border-radius-small);
 }
 
 /* category */
 .header__category-container{
     background-color: var(--color-white);
-    overflow: auto;
+    padding: var(--rem-1) 0;
 }
 
 .category-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap:var(--rem-2);
+    overflow: auto;
 }
 
 .category{
     text-align: center;
+    cursor:pointer;
     & figure{
         width: 5rem;
         aspect-ratio: 1/1;
@@ -126,15 +157,21 @@ body{
     color: var(--color-white);
     padding: var(--rem-half);
     letter-spacing: 1px;
+    border-radius: var(--border-radius-small);
 }
 
 .main-container{
     background-color: var(--bg-main);
 
-    & .product-section , & product-section-1{
+    & .product-section {
         background-color: var(--color-white);
         padding: var(--rem-1);
         margin: var(--rem-1) 0;
+        border-radius: var(--border-radius-small);
+
+        &:first-child{
+            overflow: auto;
+        }
     }
 
 }
@@ -144,7 +181,6 @@ body{
 .product-section__advertise{
     display: flex;
     gap: var(--rem-half);
-    /* padding: var(--rem-1); */
     margin: var(--rem-1) 0;
 
     & .product-section{
@@ -169,12 +205,13 @@ body{
 .product-section__list{
     overflow: auto;
     scrollbar-width: thin;
+    margin-top: var(--rem-half);
 
     display: flex;
     gap:var(--rem-1)
 }
 
-.product{
+.product-card{
     text-align: center;
     & img{
         aspect-ratio: 1 / 1;
