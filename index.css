@@ -38,6 +38,9 @@
 body{
     
 }
+a{
+    text-decoration: none;
+}
 
 .root{
     position: relative;
@@ -246,9 +249,9 @@ body{
     overflow: auto;
     scrollbar-width: thin;
     margin-top: var(--rem-half);
-
+    padding-bottom: var(--rem-1);
     display: flex;
-    gap:var(--rem-1)
+    gap:var(--rem-2)
 }
 
 .product-card{
