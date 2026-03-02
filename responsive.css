@@ -3,6 +3,9 @@
 
 @media screen and (max-width:550px) 
 {
+    .threedot{
+        display: block;
+    }
     .root:has(#cb-threedot:checked)
     {
         .nav__right-actions{
@@ -33,6 +36,7 @@
         order: 0;
         height: 40vh;
     }
+   
     
 }
 
