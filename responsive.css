@@ -36,7 +36,7 @@
     
 }
 
-@media screen and (max-width:765px) and (min-width:551px)
+@media screen and (max-width:768px) and (min-width:551px)
 {
     .nav__right{
         gap: var(--rem-1);
