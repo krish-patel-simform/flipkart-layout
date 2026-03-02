@@ -1,0 +1,70 @@
+/* lablet view */
+
+
+@media screen and (max-width:550px) 
+{
+    .root:has(#cb-threedot:checked)
+    {
+        .nav__right-actions{
+            background-color: var(--bg-header);
+            top: 3.5rem;
+            right: 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            padding: var(--rem-half);
+        }
+    }
+    .header__nav{
+        gap: var(--rem-half);
+    }
+    .nav__right-actions{
+        display: none;
+    }
+    .product-section__advertise{
+        flex-direction: column;
+
+        & .product-section{
+            order: 1;
+        }
+    }
+    .advertise-container{
+        margin: auto;
+        order: 0;
+        height: 40vh;
+    }
+    
+}
+
+@media screen and (max-width:765px) and (min-width:551px)
+{
+    .nav__right{
+        gap: var(--rem-1);
+    }
+    .nav__right button:first-of-type{
+        display: none;
+    }
+    .nav__right button:nth-of-type(2) span span
+   {
+       display: none;
+   }
+    .nav__right button:nth-of-type(3) span span
+    {
+        display: none;
+    }
+    .product-section__advertise{
+        flex-direction: column;
+
+        & .product-section{
+            order: 1;
+        }
+    }
+    .advertise-container{
+        margin: auto;
+        order: 0;
+        height: 40vh;
+    }
+
+    
+
+}
