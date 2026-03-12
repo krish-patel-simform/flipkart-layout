@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="./responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/png" href="./public/images/favicon.png" >
+
+</head>
+<body>
+    <div class="root">
+
+        <!-- header -->
+        <header class="header">
+
+            <nav class="header__nav wrapper">
+                <!-- left -->
+                <div class="nav__left">
+
+                    <svg class="image-container">
+                        <use href="./public/images/flipkart.svg"></use>
+                    </svg>
+
+                    <search class="header-search">
+                        <input type="search" name="search" placeholder="Search for product and more"/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </search>
+                </div>
+
+                <!-- right -->
+                <div class="nav__right">
+
+                    <!-- three dot -->
+                    <input type="checkbox" id="cb-threedot" class="hidden">
+                    <label for="cb-threedot" class="threedot">        
+                        <i tabindex="0" class="fa-solid fa-ellipsis-vertical"></i>
+                    </label>
+
+                    <div class="nav__right-actions">
+                        <!-- dark mode -->
+                       <input type="checkbox" id="cb-darkmode" class="hidden"/>
+                       
+                       <label for="cb-darkmode">
+                           <i tabindex="0" class="fa-solid fa-moon"></i>
+                       </label>
+                       
+                       <button class="btn header-btn">Login</button>
+                       <button class="btn">
+                           <span>
+                               <span>More</span>
+                               <i class="fa-solid fa-angle-down"></i>
+                           </span>
+                       </button>
+                       <button class="btn">
+                           <span>
+                               <i class="fa-solid fa-cart-shopping"></i>
+                               <span>Cart</span>
+                           </span>
+                       </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- category -->
+            <section class="header__category-container">
+
+                <div class="wrapper">
+                     <!-- category -->
+                    <div class="category-list">
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/fashion.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/electronics.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/auto.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/mobile.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/travel.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                        <article class="category">
+                            <figure>
+                                <img src="./public/images/home.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                         <article class="category">
+                            <figure>
+                                <img src="./public/images/toy.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+    
+                         <article class="category">
+                            <figure>
+                                <img src="./public/images/sport.png" alt="fashion" height="100%" width="100%">
+                            </figure>
+                            <figcaption>Fashion</figcaption>
+                        </article>
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </header>
+
+        <!-- main product section -->
+        <main class="main-container">
+            <div class="wrapper">
+
+                <div class="product-section__advertise">
+                    <section class="product-section">
+    
+                        <!-- heading -->
+                        <header class="product-section__heading">
+                            <span>
+                                <span>
+                                    <h3>Deal of the Day</h3>
+                                    <p>Shop Now!</p>
+                                </span>
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    <span> 22 : 07 : 36 Left</span>
+                                </p>
+                            </span>
+    
+                            <button class="btn btn-primary">view all</button>
+    
+                        </header>
+    
+                        <!-- list -->
+                     <div class="product-section__list">
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+                        </article>
+
+                    </div>
+    
+                    </section>
+
+                    <figure class="advertise-container">
+                        <img src="./public/images/discount-image.png" alt="discount image" height="100%" width="100%">
+                    </figure>
+                </div>
+
+                <section class="product-section">
+
+                    <!-- heading -->
+                    <header class="product-section__heading">
+                        <span>
+                            <h3>Deal of the Day</h3>
+                            <p>Shop Now!</p>
+                        </span>
+
+                        <button class="btn btn-primary">view all</button>
+
+                    </header>
+
+                    <!-- list -->
+                    <div class="product-section__list">
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                 <section class="product-section">
+
+                    <!-- heading -->
+                    <header class="product-section__heading">
+                        <span>
+                            <h3>Deal of the Day</h3>
+                            <p>Shop Now!</p>
+                        </span>
+
+                        <button class="btn btn-primary">view all</button>
+
+                    </header>
+
+                    <!-- list -->
+                    <div class="product-section__list">
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+
+                        </article>
+
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+                        </article>
+                        
+                         <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+                        </article>
+                        
+                        <article class="product-card">
+                            <a href="">
+                                <img src="./public/images/iphone.png" alt="iphone" >
+    
+                                <p class="product-name">Iphone 16</p>
+                                <p class="product-discount">Extra 10% off</p>
+                                <p class="product-description">Lowest Price Ever</p>
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
